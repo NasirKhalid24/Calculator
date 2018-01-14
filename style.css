@@ -1,0 +1,117 @@
+*
+{
+	margin: 0;
+	padding: 0;
+}
+
+body
+{
+	background-color: #ffdfa0;
+}
+#Calculator
+{
+	height: 650px;
+	width: 500px;
+	background-color: black;
+	text-align: center;
+	position: absolute;
+	float: center;
+	top: 10%;
+	left: 33%;
+	margin-left: auto;
+	margin-right: auto;
+	border: 5px solid #0F1A28;
+	border-radius: 10px;
+}
+
+#Screen
+{
+	width: 100%;
+	height: 90px;
+	background-color: #0F1A28;
+	font-family: "Bungee";
+	color: #B91E29;
+	font-size: 85px;
+	text-align: right;
+	padding-top: 55px;
+}
+
+#Row
+{
+	width: 100%
+	height: 123.75px;
+	display: inline-block; 
+	margin: 0;
+	vertical-align: bottom; /* Removes top and bottom gap between rows (hella weird behaviour) */
+}
+
+.button
+{
+	width: 123px;
+	height: 95.75px;
+	float: left; 			/* Removes gaps between left and right of buttons (another hella weird behaviour) */
+	border: 1px solid #0F1A28;
+	background-color: #DA7910;
+	font-family: "Bungee";
+	color: #0F1A28;
+	font-size: 60px;
+	text-align: center;
+	padding-top: 28px;
+}
+
+.button:hover
+{
+	background-color: #F5A619;
+}
+
+.button-edge-left
+{
+	width: 123px;
+	height: 95.75px;
+	float: left; 			/* Removes gaps between left and right of buttons (another hella weird behaviour) */
+	border: 1px solid #0F1A28;
+	background-color: #DA7910;
+	border-bottom-left-radius: 5px;
+	font-family: "Bungee";
+	color: #0F1A28;
+	font-size: 60px;
+	text-align: center;
+	padding-top: 28px;
+}
+
+
+.button-edge-left:hover
+{
+	background-color: #F5A619;
+}
+
+.button-edge-right
+{
+	width: 123px;
+	height: 95.75px;
+	float: left; 			/* Removes gaps between left and right of buttons (another hella weird behaviour) */
+	border: 1px solid #0F1A28;
+	background-color: #DA7910;
+	border-bottom-right-radius: 5px;
+	font-family: "Bungee";
+	color: #0F1A28;
+	font-size: 60px;
+	text-align: center;
+	padding-top: 28px;
+}
+
+.button-edge-right:hover
+{
+	background-color: #F5A619;
+}
+
+h6
+{
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	margin-top: 30px;
+	font-family: Times New Roman;
+	font-size: 12px;
+}
+
