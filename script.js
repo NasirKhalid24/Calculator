@@ -125,26 +125,28 @@ function Solve(solvent)
 		temp.splice(div-1, 3, b);
 		div = temp.indexOf('÷');
 	}
-	while(mult != -1 && zero_div == false)
+	while(mult != -1)
 	{
 		mult = temp.indexOf('*');
 		b = Operate('*', temp[mult-1],temp[mult+1]);
 		temp.splice(mult-1, 3, b);
 		mult = temp.indexOf('*');
 	}
-	while(add != -1 && zero_div == false)
+	while(add != -1)
 	{
 		add = temp.indexOf('+');
 		b = Operate('+', temp[add-1],temp[add+1]);
 		temp.splice(add-1, 3, b);
 		add = temp.indexOf('+');
 	}
-	while(sub != -1 && zero_div == false)
+	while(sub != -1)
 	{
+		console.log(temp);
 		sub = temp.indexOf('-');
 		b = Operate('-', temp[sub-1],temp[sub+1]);
 		temp.splice(sub-1, 3, b);
 		sub = temp.indexOf('-');
+		console.log(temp);
 	}
 
 	if(zero_div == true)
